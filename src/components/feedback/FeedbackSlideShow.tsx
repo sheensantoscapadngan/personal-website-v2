@@ -30,7 +30,12 @@ const FeedbackSlideShow = ({ feedbacks }: Props) => {
   };
   return (
     <>
-      <Paper className={classes.feedbackCardContainer} elevation={3} square>
+      <Paper
+        className={classes.feedbackCardContainer}
+        id="feedback-scrollpoint"
+        elevation={3}
+        square
+      >
         <Slider {...slideSettings}>
           {feedbacks.map((feedback) => (
             <FeedbackItem data={feedback} />

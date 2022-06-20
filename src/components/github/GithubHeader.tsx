@@ -20,6 +20,7 @@ const GithubHeader = () => {
       container
       justify="center"
       style={{ marginTop: GITHUB_HEADER_MARGIN_TOP }}
+      id="github-scrollpoint"
     >
       <Grid container item sm={6} alignItems="center" justify="center">
         <Grid item>

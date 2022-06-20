@@ -18,7 +18,11 @@ const ProjectHeader = () => {
   const classes = useStyles();
   return (
     <>
-      <Grid container style={{ marginTop: PROJECTS_MARGIN_TOP }}>
+      <Grid
+        container
+        style={{ marginTop: PROJECTS_MARGIN_TOP }}
+        id="projects-scrollpoint"
+      >
         <Grid container item sm={11}>
           <img src={Projects} style={{ height: "70%" }} />
           <Typography

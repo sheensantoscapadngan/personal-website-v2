@@ -5,6 +5,7 @@ import {
   Toolbar,
   Typography,
   makeStyles,
+  Link,
 } from "@material-ui/core";
 import Logo from "../images/logo.svg";
 import MenuBubble from "../images/menu_bubble.svg";
@@ -20,7 +21,11 @@ const useStyles = makeStyles((theme) => {
       marginRight: theme.spacing(4),
     },
     menuItem: {
+      cursor: "pointer",
       marginRight: theme.spacing(4),
+      "&:hover": {
+        opacity: 0.8,
+      },
     },
     menuBubbleContainer: {
       display: "flex",
@@ -35,10 +40,17 @@ const useStyles = makeStyles((theme) => {
 
 const AppMenu = () => {
   const classes = useStyles();
+
+  const scroll = (elementId: string) => {
+    document
+      ?.querySelector(`#${elementId}`)
+      ?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
   return (
     <AppBar position="static" elevation={0}>
       <Toolbar style={{ margin: 0, padding: 0 }}>
-        <Grid container>
+        <Grid container id="home-scrollpoint">
           <Grid
             item
             sm={6}
@@ -51,19 +63,36 @@ const AppMenu = () => {
               align="left"
               className={classes.menuItem}
               color="textSecondary"
+              onClick={() => scroll("home-scrollpoint")}
             >
               Home
             </Typography>
-            <Typography className={classes.menuItem} color="textSecondary">
+            <Typography
+              className={classes.menuItem}
+              color="textSecondary"
+              onClick={() => scroll("projects-scrollpoint")}
+            >
               Projects
             </Typography>
-            <Typography className={classes.menuItem} color="textSecondary">
+            <Typography
+              className={classes.menuItem}
+              color="textSecondary"
+              onClick={() => scroll("accomplishments-scrollpoint")}
+            >
               Accomplishments
             </Typography>
-            <Typography className={classes.menuItem} color="textSecondary">
+            <Typography
+              className={classes.menuItem}
+              color="textSecondary"
+              onClick={() => scroll("github-scrollpoint")}
+            >
               Github
             </Typography>
-            <Typography className={classes.menuItem} color="textSecondary">
+            <Typography
+              className={classes.menuItem}
+              color="textSecondary"
+              onClick={() => scroll("feedback-scrollpoint")}
+            >
               Feedback
             </Typography>
           </Grid>

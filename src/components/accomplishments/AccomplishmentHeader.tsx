@@ -17,7 +17,11 @@ const AccomplishmentHeader = () => {
   const classes = useStyles();
   return (
     <>
-      <Grid container style={{ marginTop: ACCOMPLISHMENT_MARGIN_TOP }}>
+      <Grid
+        container
+        style={{ marginTop: ACCOMPLISHMENT_MARGIN_TOP }}
+        id="accomplishments-scrollpoint"
+      >
         <Grid container item sm={11}>
           <img src={Accomplishment} style={{ height: "70%" }} />
           <Typography

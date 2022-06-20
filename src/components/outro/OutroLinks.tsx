@@ -35,13 +35,15 @@ const OutroLinks = () => {
             className={classes.rowContainer}
           >
             <img src={item.icon} className={classes.linkIcon} />
-            <Typography
-              variant="body2"
-              color="textSecondary"
-              className={classes.linkText}
-            >
-              {item.link}
-            </Typography>
+            <a href={item.link} target="_blank" rel="noreferrer">
+              <Typography
+                variant="body2"
+                color="textSecondary"
+                className={classes.linkText}
+              >
+                {item.link}
+              </Typography>
+            </a>
           </Grid>
         ))}
       </Grid>

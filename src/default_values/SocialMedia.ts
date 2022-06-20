@@ -1,7 +1,6 @@
 import LinkedIn from "../images/linkedin.svg";
 import Facebook from "../images/facebook.svg";
 import Fiverr from "../images/fiverr.svg";
-import Gmail from "../images/gmail.svg";
 
 export default [
   {
@@ -15,9 +14,5 @@ export default [
   {
     icon: Fiverr,
     link: "https://www.fiverr.com/sheensantos",
-  },
-  {
-    icon: Gmail,
-    link: "sheensantoscapadngan@gmail.com",
   },
 ];

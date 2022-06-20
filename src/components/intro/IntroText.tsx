@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Grid, Paper, Typography } from "@material-ui/core";
+import { Container, Grid, Typography } from "@material-ui/core";
 import { INTRO_TEXT_MARGIN_TOP } from "../../constants/Intro";
 
 const AppIntroduction = () => {

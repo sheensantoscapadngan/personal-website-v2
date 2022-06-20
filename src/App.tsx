@@ -19,7 +19,7 @@ import Intro from "./components/intro/Intro";
 import Projects from "./components/projects/Projects";
 import Accomplishments from "./components/accomplishments/Accomplishments";
 import Github from "./components/github/Github";
-import Feedbacks from "./components/feedback/Feedbacks";
+import Feedback from "./components/feedback/Feedback";
 import Outro from "./components/outro/Outro";
 
 import "slick-carousel/slick/slick.css";
@@ -64,6 +64,7 @@ const useStyles = makeStyles((theme) => {
 
 const App = () => {
   const classes = useStyles();
+
   return (
     <MuiThemeProvider theme={theme}>
       <div className="App">
@@ -81,7 +82,7 @@ const App = () => {
           <Github />
         </Grid>
         <Grid container className={classes.feedbackContainer}>
-          <Feedbacks />
+          <Feedback />
         </Grid>
         <Outro />
       </div>
