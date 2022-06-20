@@ -1,0 +1,1 @@
+export const ACCOMPLISHMENT_MARGIN_TOP = 60;

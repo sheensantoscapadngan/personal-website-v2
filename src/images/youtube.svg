@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="50" viewBox="0 0 180 50">
+  <g id="youtube" transform="translate(-1506 -1222)">
+    <rect id="Rectangle_5" data-name="Rectangle 5" width="180" height="50" rx="11" transform="translate(1506 1222)" fill="#fff"/>
+    <text id="Youtube-2" data-name="Youtube" transform="translate(1570 1258)" font-size="29" font-family="Bahnschrift" font-weight="700"><tspan x="0" y="0">Youtube</tspan></text>
+    <g id="youtube-3" data-name="youtube" transform="translate(1518.105 1232.045)">
+      <path id="Path_28" data-name="Path 28" d="M41.839,4.68A5.352,5.352,0,0,0,38.074.915C34.731,0,21.359,0,21.359,0S7.988,0,4.645.88A5.461,5.461,0,0,0,.88,4.68C0,8.023,0,14.955,0,14.955S0,21.922.88,25.23A5.353,5.353,0,0,0,4.645,29c3.378.915,16.714.915,16.714.915s13.371,0,16.714-.88a5.352,5.352,0,0,0,3.765-3.765c.88-3.343.88-10.275.88-10.275s.035-6.967-.88-10.31Zm0,0" transform="translate(0 0)" fill="red"/>
+      <path id="Path_29" data-name="Path 29" d="M204.969,115.293l11.119-6.4-11.119-6.4Zm0,0" transform="translate(-187.867 -93.934)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

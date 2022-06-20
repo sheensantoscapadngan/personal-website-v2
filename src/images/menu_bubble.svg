@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="197" height="163" viewBox="0 0 197 163">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_19" data-name="Rectangle 19" width="197" height="163" transform="translate(1723)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="menu_bubble" transform="translate(-1723)" clip-path="url(#clip-path)">
+    <g id="Ellipse_5" data-name="Ellipse 5" transform="translate(1770 -120)" fill="#00ff3a" stroke="#707070" stroke-width="1" opacity="0.37">
+      <circle cx="137.5" cy="137.5" r="137.5" stroke="none"/>
+      <circle cx="137.5" cy="137.5" r="137" fill="none"/>
+    </g>
+  </g>
+</svg>

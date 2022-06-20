@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25.888" height="16.5" viewBox="0 0 25.888 16.5">
+  <g id="watch_icon" transform="translate(0 -92.835)">
+    <g id="Group_51" data-name="Group 51" transform="translate(0 92.835)">
+      <g id="Group_50" data-name="Group 50" transform="translate(0)">
+        <path id="Path_63" data-name="Path 63" d="M25.723,100.581c-.231-.316-5.742-7.746-12.78-7.746S.4,100.265.164,100.581a.854.854,0,0,0,0,1.007c.231.316,5.742,7.746,12.78,7.746s12.548-7.43,12.78-7.746A.853.853,0,0,0,25.723,100.581Zm-12.78,7.047c-5.184,0-9.674-4.931-11-6.544,1.327-1.614,5.808-6.543,11-6.543s9.674,4.931,11,6.544C22.62,102.7,18.139,107.628,12.944,107.628Z" transform="translate(0 -92.835)" fill="#b7b7b7"/>
+      </g>
+    </g>
+    <g id="Group_53" data-name="Group 53" transform="translate(7.823 95.964)">
+      <g id="Group_52" data-name="Group 52" transform="translate(0 0)">
+        <path id="Path_64" data-name="Path 64" d="M159.843,154.725a5.121,5.121,0,1,0,5.121,5.121A5.127,5.127,0,0,0,159.843,154.725Zm0,8.534a3.414,3.414,0,1,1,3.414-3.414A3.418,3.418,0,0,1,159.843,163.259Z" transform="translate(-154.722 -154.725)" fill="#b7b7b7"/>
+      </g>
+    </g>
+  </g>
+</svg>
