@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { makeStyles, Grid } from "@material-ui/core";
-import Github from "../../default_values/Github";
 import GithubItem from "./GithubItem";
+import { GithubRepoInterface } from "../../interfaces/GithubInterface";
+import {
+  fetchGithubRepos,
+  removeForkedRepos,
+  sortReposByPopularity,
+} from "../../services/GithubService";
 
 const useStyles = makeStyles((theme) => {
   return {
@@ -13,9 +18,19 @@ const useStyles = makeStyles((theme) => {
 
 const GithubTable = () => {
   const classes = useStyles();
+  const [githubRepos, setGithubRepos] = useState<GithubRepoInterface[]>([]);
+
+  useEffect(() => {
+    fetchGithubRepos().then((data) => {
+      const filteredRepos = removeForkedRepos(data);
+      const sortedRepos = sortReposByPopularity(filteredRepos);
+      setGithubRepos(sortedRepos);
+    });
+  }, []);
+
   return (
     <Grid container spacing={4} alignItems="stretch">
-      {Github.map((repo) => (
+      {githubRepos.map((repo) => (
         <Grid item sm={4} className={classes.gridItem}>
           <GithubItem repo={repo} />
         </Grid>

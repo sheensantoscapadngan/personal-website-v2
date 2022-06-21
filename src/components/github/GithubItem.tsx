@@ -3,16 +3,7 @@ import { Grid, Paper, Typography, makeStyles } from "@material-ui/core";
 import WatchIcon from "../../images/watch_icon.svg";
 import StarIcon from "../../images/star_icon.svg";
 import ForkIcon from "../../images/fork_icon.svg";
-
-interface GithubItemInterface {
-  repo: {
-    title: string;
-    description: string;
-    watch_count: number;
-    star_count: number;
-    fork_count: number;
-  };
-}
+import { GithubRepoInterface } from "../../interfaces/GithubInterface";
 
 const useStyles = makeStyles((theme) => {
   return {
@@ -35,7 +26,12 @@ const useStyles = makeStyles((theme) => {
   };
 });
 
-const GithubItem = ({ repo }: GithubItemInterface) => {
+interface Props {
+  repo: GithubRepoInterface;
+}
+
+const GithubItem = (props: Props) => {
+  const { repo } = props;
   const classes = useStyles();
   return (
     <Paper elevation={10} className={classes.repoContainer}>
@@ -55,7 +51,7 @@ const GithubItem = ({ repo }: GithubItemInterface) => {
               color="secondary"
               className={classes.iconText}
             >
-              {repo.watch_count}
+              {repo.watchersCount}
             </Typography>
           </Grid>
         </Grid>
@@ -74,7 +70,7 @@ const GithubItem = ({ repo }: GithubItemInterface) => {
               color="secondary"
               className={classes.iconText}
             >
-              {repo.star_count}
+              {repo.starsCount}
             </Typography>
           </Grid>
         </Grid>
@@ -93,13 +89,13 @@ const GithubItem = ({ repo }: GithubItemInterface) => {
               color="secondary"
               className={classes.iconText}
             >
-              {repo.fork_count}
+              {repo.forksCount}
             </Typography>
           </Grid>
         </Grid>
       </Grid>
       <Typography color="textPrimary" style={{ marginTop: 10 }}>
-        {repo.title}
+        {repo.name}
       </Typography>
       <Typography
         color="textSecondary"
