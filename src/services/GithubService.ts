@@ -2,7 +2,7 @@ import axios from "axios";
 import { GithubRepoInterface } from "../interfaces/GithubInterface";
 
 const PROFILE_ENDPOINT =
-  "https://api.github.com/users/sheensantoscapadngan/repos?222222";
+  "https://api.github.com/users/sheensantoscapadngan/repos";
 
 export const fetchGithubRepos = async (): Promise<GithubRepoInterface[]> => {
   const reposResponse = await axios.get(PROFILE_ENDPOINT);
