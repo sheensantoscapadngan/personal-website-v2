@@ -63,13 +63,6 @@ const AppMenu = () => {
               align="left"
               className={classes.menuItem}
               color="textSecondary"
-              onClick={() => scroll("home-scrollpoint")}
-            >
-              Home
-            </Typography>
-            <Typography
-              className={classes.menuItem}
-              color="textSecondary"
               onClick={() => scroll("projects-scrollpoint")}
             >
               Projects
@@ -87,6 +80,13 @@ const AppMenu = () => {
               onClick={() => scroll("github-scrollpoint")}
             >
               Github
+            </Typography>
+            <Typography
+              className={classes.menuItem}
+              color="textSecondary"
+              onClick={() => scroll("testimonies-scrollpoint")}
+            >
+              Testimonies
             </Typography>
             <Typography
               className={classes.menuItem}

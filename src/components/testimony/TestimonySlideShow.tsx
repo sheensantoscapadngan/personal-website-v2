@@ -1,12 +1,12 @@
 import React from "react";
 import Slider from "react-slick";
 import { Paper, makeStyles } from "@material-ui/core";
-import FeedbackItem from "./FeedbackItem";
-import FeedbackInterface from "../../interfaces/FeedbackInterface";
+import TestimonyItem from "./TestimonyItem";
+import TestimonyInterface from "../../interfaces/TestimonyInterface";
 
 const useStyles = makeStyles((theme) => {
   return {
-    feedbackCardContainer: {
+    testimonyCardContainer: {
       backgroundColor: theme.palette.primary.main,
       padding: theme.spacing(2),
       width: "100%",
@@ -15,10 +15,10 @@ const useStyles = makeStyles((theme) => {
 });
 
 interface Props {
-  feedbacks: FeedbackInterface[];
+  testimonies: TestimonyInterface[];
 }
 
-const FeedbackSlideShow = ({ feedbacks }: Props) => {
+const TestimonySlideShow = ({ testimonies }: Props) => {
   const classes = useStyles();
   const slideSettings = {
     arrows: false,
@@ -31,14 +31,14 @@ const FeedbackSlideShow = ({ feedbacks }: Props) => {
   return (
     <>
       <Paper
-        className={classes.feedbackCardContainer}
-        id="feedback-scrollpoint"
+        className={classes.testimonyCardContainer}
+        id="testimonies-scrollpoint"
         elevation={3}
         square
       >
         <Slider {...slideSettings}>
-          {feedbacks.map((feedback) => (
-            <FeedbackItem data={feedback} />
+          {testimonies.map((testimony) => (
+            <TestimonyItem data={testimony} />
           ))}
         </Slider>
         <br></br>
@@ -47,4 +47,4 @@ const FeedbackSlideShow = ({ feedbacks }: Props) => {
   );
 };
 
-export default FeedbackSlideShow;
+export default TestimonySlideShow;

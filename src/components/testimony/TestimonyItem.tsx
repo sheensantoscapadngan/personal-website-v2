@@ -1,10 +1,10 @@
 import React from "react";
 import { Paper, Typography, makeStyles, Grid } from "@material-ui/core";
-import { PROFILE_IMAGE_SIZE } from "../../constants/Feedback";
-import FeedbackInterface from "../../interfaces/FeedbackInterface";
+import { PROFILE_IMAGE_SIZE } from "../../constants/Testimony";
+import TestimonyInterface from "../../interfaces/TestimonyInterface";
 
-interface FeedbackItemProps {
-  data: FeedbackInterface;
+interface TestimonyItemProps {
+  data: TestimonyInterface;
 }
 
 const useStyles = makeStyles((theme) => {
@@ -23,14 +23,14 @@ const useStyles = makeStyles((theme) => {
       marginTop: theme.spacing(1),
       marginBottom: theme.spacing(1),
     },
-    feedback: {
+    content: {
       fontSize: "80%",
     },
   };
 });
 
-const FeedbackItem = ({ data }: FeedbackItemProps) => {
-  const { headline, feedback, profilePicture, name } = data;
+const TestimonyItem = ({ data }: TestimonyItemProps) => {
+  const { headline, content, profilePicture, name } = data;
   const classes = useStyles();
   return (
     <Paper elevation={10} className={classes.itemContainer}>
@@ -43,11 +43,11 @@ const FeedbackItem = ({ data }: FeedbackItemProps) => {
         </Typography>
       </Grid>
       <Typography>{headline}</Typography>
-      <Typography color="textSecondary" className={classes.feedback}>
-        {feedback}
+      <Typography color="textSecondary" className={classes.content}>
+        {content}
       </Typography>
     </Paper>
   );
 };
 
-export default FeedbackItem;
+export default TestimonyItem;

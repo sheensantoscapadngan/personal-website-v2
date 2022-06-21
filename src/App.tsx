@@ -19,7 +19,7 @@ import Intro from "./components/intro/Intro";
 import Projects from "./components/projects/Projects";
 import Accomplishments from "./components/accomplishments/Accomplishments";
 import Github from "./components/github/Github";
-import Feedback from "./components/feedback/Feedback";
+import Testimonies from "./components/testimony/Testimonies";
 import Outro from "./components/outro/Outro";
 
 import "slick-carousel/slick/slick.css";
@@ -56,7 +56,7 @@ const useStyles = makeStyles((theme) => {
       paddingLeft: theme.spacing(5),
       paddingRight: theme.spacing(5),
     },
-    feedbackContainer: {
+    testimonyContainer: {
       marginTop: theme.spacing(15),
     },
   };
@@ -81,8 +81,8 @@ const App = () => {
           <Grid item sm={4}></Grid>
           <Github />
         </Grid>
-        <Grid container className={classes.feedbackContainer}>
-          <Feedback />
+        <Grid container className={classes.testimonyContainer}>
+          <Testimonies />
         </Grid>
         <Outro />
       </div>
