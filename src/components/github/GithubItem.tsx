@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Paper, Typography, makeStyles } from "@material-ui/core";
+import { Grid, Paper, Typography, makeStyles, Link } from "@material-ui/core";
 import WatchIcon from "../../images/watch_icon.svg";
 import StarIcon from "../../images/star_icon.svg";
 import ForkIcon from "../../images/fork_icon.svg";
@@ -94,9 +94,16 @@ const GithubItem = (props: Props) => {
           </Grid>
         </Grid>
       </Grid>
-      <Typography color="textPrimary" style={{ marginTop: 10 }}>
+      <Link
+        color="textPrimary"
+        href={repo.url}
+        style={{ marginTop: 10 }}
+        rel="noreferrer"
+        target="_blank"
+        variant="h6"
+      >
         {repo.name}
-      </Typography>
+      </Link>
       <Typography
         color="textSecondary"
         variant="body2"

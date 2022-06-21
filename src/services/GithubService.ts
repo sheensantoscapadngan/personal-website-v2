@@ -14,6 +14,7 @@ export const fetchGithubRepos = async (): Promise<GithubRepoInterface[]> => {
       isForked: res.fork,
       name: res.name,
       starsCount: res.stargazers_count,
+      url: res.html_url,
       watchersCount: res.watchers_count,
     })
   );

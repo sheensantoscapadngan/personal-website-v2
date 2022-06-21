@@ -4,5 +4,6 @@ export interface GithubRepoInterface {
   isForked: boolean;
   name: string;
   starsCount: number;
+  url: string;
   watchersCount: number;
 }
