@@ -6,21 +6,34 @@ import CodeIcon from "../../images/code_icon.svg";
 
 const useStyles = makeStyles((theme) => {
   return {
-    introCardContainer: {
+    cardContainer: {
       marginTop: INTRO_CARD_MARGIN_TOP,
       backgroundColor: theme.palette.primary.light,
       padding: theme.spacing(2),
     },
-    introProfileImage: {
+    profileImageContainer: {
+      [theme.breakpoints.down("sm")]: {
+        justifyContent: "center",
+        marginBottom: theme.spacing(1),
+      },
+    },
+    profileImage: {
       maxWidth: "94%",
+      [theme.breakpoints.down("sm")]: {
+        maxWidth: "60%",
+      },
     },
     codeIcon: {
       marginTop: theme.spacing(1),
       marginBottom: theme.spacing(1),
       width: CODE_ICON_WIDTH,
     },
-    introTextContainer: {
+    textContainer: {
       paddingTop: theme.spacing(2),
+      textAlign: "justify",
+      [theme.breakpoints.down("sm")]: {
+        padding: theme.spacing(2),
+      },
     },
   };
 });
@@ -29,15 +42,18 @@ const IntroCard = () => {
   const classes = useStyles();
   return (
     <>
-      <Paper className={classes.introCardContainer} elevation={10} square>
-        <Grid container item sm={12}>
-          <Grid item sm={4}>
-            <img
-              src={ProfilePicture}
-              className={classes.introProfileImage}
-            ></img>
+      <Paper className={classes.cardContainer} elevation={10} square>
+        <Grid container sm={12}>
+          <Grid
+            container
+            item
+            md={4}
+            sm={12}
+            className={classes.profileImageContainer}
+          >
+            <img src={ProfilePicture} className={classes.profileImage}></img>
           </Grid>
-          <Grid item className={classes.introTextContainer} sm={8}>
+          <Grid item className={classes.textContainer} md={8} sm={12}>
             <Typography variant="body1" style={{ fontSize: "1.2em" }}>
               I am...
             </Typography>

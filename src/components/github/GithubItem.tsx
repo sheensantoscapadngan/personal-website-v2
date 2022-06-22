@@ -7,11 +7,8 @@ import { GithubRepoInterface } from "../../interfaces/GithubInterface";
 
 const useStyles = makeStyles((theme) => {
   return {
-    repoContainer: {
-      backgroundColor: theme.palette.primary.light,
-      padding: theme.spacing(2),
-      height: "100%",
-      borderRadius: 10,
+    description: {
+      fontSize: "70%",
     },
     icon: {
       width: "25%",
@@ -20,8 +17,18 @@ const useStyles = makeStyles((theme) => {
       fontSize: "60%",
       marginLeft: theme.spacing(0.5),
     },
-    description: {
-      fontSize: "70%",
+    name: {
+      marginTop: 10,
+      display: "inline-block",
+      overflow: "hidden",
+      textOverflow: "ellipsis",
+      width: "calc(90%)",
+    },
+    repoContainer: {
+      backgroundColor: theme.palette.primary.light,
+      padding: theme.spacing(2),
+      height: "100%",
+      borderRadius: 10,
     },
   };
 });
@@ -96,8 +103,8 @@ const GithubItem = (props: Props) => {
       </Grid>
       <Link
         color="textPrimary"
+        className={classes.name}
         href={repo.url}
-        style={{ marginTop: 10 }}
         rel="noreferrer"
         target="_blank"
         variant="h6"

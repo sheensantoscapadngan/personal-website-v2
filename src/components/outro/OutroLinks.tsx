@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, makeStyles, Typography } from "@material-ui/core";
+import { Grid, Hidden, makeStyles, Typography } from "@material-ui/core";
 import SocialMedia from "../../default_values/SocialMedia";
 
 const useStyles = makeStyles((theme) => {
@@ -18,6 +18,10 @@ const useStyles = makeStyles((theme) => {
     },
     rowContainer: {
       marginBottom: theme.spacing(2),
+      cursor: "pointer",
+      "&:hover": {
+        opacity: 0.8,
+      },
     },
   };
 });
@@ -26,27 +30,30 @@ const OutroLinks = () => {
   const classes = useStyles();
   return (
     <Grid container className={classes.container}>
-      <Grid container>
-        {SocialMedia.map((item) => (
-          <Grid
-            container
-            item
-            alignItems="center"
-            className={classes.rowContainer}
-          >
-            <img src={item.icon} className={classes.linkIcon} />
-            <a href={item.link} target="_blank" rel="noreferrer">
-              <Typography
-                variant="body2"
-                color="textSecondary"
-                className={classes.linkText}
-              >
-                {item.link}
-              </Typography>
-            </a>
-          </Grid>
-        ))}
-      </Grid>
+      {SocialMedia.map((item) => (
+        <Grid
+          container
+          item
+          alignItems="center"
+          className={classes.rowContainer}
+          onClick={() => {
+            window.open(item.link);
+          }}
+          lg={12}
+          sm={4}
+        >
+          <img src={item.icon} className={classes.linkIcon} />
+          <Hidden mdDown>
+            <Typography
+              variant="body2"
+              color="textSecondary"
+              className={classes.linkText}
+            >
+              {item.link}
+            </Typography>
+          </Hidden>
+        </Grid>
+      ))}
     </Grid>
   );
 };

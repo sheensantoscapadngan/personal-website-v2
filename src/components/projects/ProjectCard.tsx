@@ -15,6 +15,9 @@ const useStyles = makeStyles((theme) => {
     actionsContainer: {
       marginTop: theme.spacing(3),
     },
+    actionsIcon: {
+      height: "2rem",
+    },
     projectCardContainer: {
       backgroundColor: theme.palette.primary.light,
       padding: theme.spacing(2),
@@ -33,6 +36,12 @@ const useStyles = makeStyles((theme) => {
     test: {
       backgroundColor: "blue",
     },
+    thumbnail: {
+      maxWidth: "100%",
+    },
+    textContainer: {
+      paddingLeft: theme.spacing(2),
+    },
   };
 });
 
@@ -42,10 +51,10 @@ const ProjectCard = () => {
     <>
       <Paper className={classes.projectCardContainer} elevation={2} square>
         <Grid container sm={12}>
-          <Grid item sm={5}>
-            <img src={Thumbnail} style={{ maxWidth: "94%" }}></img>
+          <Grid container item sm={5}>
+            <img src={Thumbnail} className={classes.thumbnail}></img>
           </Grid>
-          <Grid item sm={7}>
+          <Grid item sm={7} className={classes.textContainer}>
             <Typography className={classes.videoTitle}>
               I developed an app for downloading Spotify Playlists for FREE
             </Typography>
@@ -66,7 +75,7 @@ const ProjectCard = () => {
         <Grid container className={classes.actionsContainer} justify="center">
           <Grid item>
             <IconButton>
-              <img src={VisitChannel} style={{ height: "2rem" }} />
+              <img src={VisitChannel} className={classes.actionsIcon} />
             </IconButton>
           </Grid>
         </Grid>

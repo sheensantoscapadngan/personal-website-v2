@@ -5,7 +5,7 @@ import {
   Toolbar,
   Typography,
   makeStyles,
-  Link,
+  Hidden,
 } from "@material-ui/core";
 import Logo from "../images/logo.svg";
 import MenuBubble from "../images/menu_bubble.svg";
@@ -50,13 +50,14 @@ const AppMenu = () => {
   return (
     <AppBar position="static" elevation={0}>
       <Toolbar style={{ margin: 0, padding: 0 }}>
-        <Grid container id="home-scrollpoint">
+        <Grid container>
           <Grid
             item
-            sm={6}
-            className={classes.menuContainer}
             alignItems="center"
+            className={classes.menuContainer}
             justify="center"
+            md={6}
+            sm={12}
           >
             <img src={Logo} className={classes.menuIcon} />
             <Typography
@@ -96,9 +97,11 @@ const AppMenu = () => {
               Feedback
             </Typography>
           </Grid>
-          <Grid item sm={6} className={classes.menuBubbleContainer}>
-            <img src={MenuBubble} className={classes.menuBubble}></img>
-          </Grid>
+          <Hidden mdDown>
+            <Grid item sm={6} className={classes.menuBubbleContainer}>
+              <img src={MenuBubble} className={classes.menuBubble}></img>
+            </Grid>
+          </Hidden>
         </Grid>
       </Toolbar>
     </AppBar>
