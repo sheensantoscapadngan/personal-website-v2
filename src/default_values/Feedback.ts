@@ -19,7 +19,8 @@ export default [
     profilePicture:
       "https://www.seedprod.com/wp-content/uploads/2020/06/how-to-create-an-online-contest.png",
     name: "Sheen",
-  },  {
+  },
+  {
     headline: "Hello I am sheen",
     feedback: "I won a contest xd",
     profilePicture:

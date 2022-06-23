@@ -31,7 +31,7 @@ const GithubTable = () => {
   return (
     <Grid container spacing={4} alignItems="stretch">
       {githubRepos.map((repo) => (
-        <Grid item sm={4} className={classes.gridItem}>
+        <Grid item sm={6} md={4} xs={12} className={classes.gridItem}>
           <GithubItem repo={repo} />
         </Grid>
       ))}

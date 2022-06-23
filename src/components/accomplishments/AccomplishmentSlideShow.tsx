@@ -8,7 +8,11 @@ const useStyles = makeStyles((theme) => {
   return {
     accomplishmentCardContainer: {
       backgroundColor: theme.palette.primary.light,
-      padding: theme.spacing(2),
+      paddingBottom: theme.spacing(3),
+      width: "100%",
+      [theme.breakpoints.down("xs")]: {
+        width: `calc(100% - ${theme.spacing(4)}px)`,
+      },
     },
   };
 });
@@ -20,6 +24,7 @@ interface Props {
 const AccomplishmentSlideShow = ({ accomplishments }: Props) => {
   const classes = useStyles();
   const slideSettings = {
+    arrows: false,
     dots: true,
     infinite: true,
     speed: 500,

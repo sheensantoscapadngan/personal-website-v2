@@ -71,7 +71,7 @@ const App = () => {
         <AppMenu />
         <Grid container>
           <Grid item sm={2} />
-          <Grid item sm={8}>
+          <Grid container item sm={8}>
             <Intro />
             <Projects />
             <Accomplishments />

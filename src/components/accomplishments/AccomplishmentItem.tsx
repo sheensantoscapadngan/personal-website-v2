@@ -11,10 +11,12 @@ const useStyles = makeStyles((theme) => {
       backgroundColor: theme.palette.primary.main,
     },
     headline: {
-      marginTop: theme.spacing(1),
+      marginTop: theme.spacing(2),
+      marginLeft: theme.spacing(2),
     },
     description: {
       marginBottom: theme.spacing(2),
+      marginLeft: theme.spacing(2),
     },
   };
 });
