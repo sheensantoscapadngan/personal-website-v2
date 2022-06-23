@@ -51,7 +51,6 @@ const useStyles = makeStyles((theme) => {
     menuBubbleContainer: {
       display: "flex",
       justifyContent: "flex-end",
-      alignItems: "center",
     },
     menuBubble: {
       height: MENU_BUBBLE_HEIGHT,
@@ -170,14 +169,14 @@ const AppMenu = () => {
             alignItems="center"
             className={classes.menuContainer}
             justify="flex-start"
-            sm={12}
+            sm={10}
             lg={6}
           >
             <DefaultView />
             <SmallScreenView />
           </Grid>
-          <Hidden mdDown>
-            <Grid item sm={6} className={classes.menuBubbleContainer}>
+          <Hidden xsDown>
+            <Grid item sm={2} lg={6} className={classes.menuBubbleContainer}>
               <img src={MenuBubble} className={classes.menuBubble}></img>
             </Grid>
           </Hidden>
