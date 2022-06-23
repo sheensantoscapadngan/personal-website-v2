@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-import { Paper, makeStyles } from "@material-ui/core";
+import { Paper, makeStyles, useMediaQuery, useTheme } from "@material-ui/core";
 import TestimonyItem from "./TestimonyItem";
 import TestimonyInterface from "../../interfaces/TestimonyInterface";
 
@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => {
     testimonyCardContainer: {
       backgroundColor: theme.palette.primary.main,
       padding: theme.spacing(2),
-      width: "100%",
+      width: `calc(100% - ${theme.spacing(4)}px)`,
     },
   };
 });
@@ -20,14 +20,17 @@ interface Props {
 
 const TestimonySlideShow = ({ testimonies }: Props) => {
   const classes = useStyles();
+  const theme = useTheme();
+  const slidesToShow = useMediaQuery(theme.breakpoints.down("xs")) ? 1 : 3;
   const slideSettings = {
+    slidesToShow,
     arrows: false,
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
     slidesToScroll: 1,
   };
+
   return (
     <>
       <Paper

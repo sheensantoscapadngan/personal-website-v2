@@ -10,9 +10,6 @@ const useStyles = makeStyles((theme) => {
       backgroundColor: theme.palette.primary.light,
       paddingBottom: theme.spacing(3),
       width: "100%",
-      [theme.breakpoints.down("xs")]: {
-        width: `calc(100% - ${theme.spacing(4)}px)`,
-      },
     },
   };
 });

@@ -1,13 +1,12 @@
 import React from "react";
 import { Grid, Paper, Typography, makeStyles } from "@material-ui/core";
-import { INTRO_CARD_MARGIN_TOP, CODE_ICON_WIDTH } from "../../constants/Intro";
 import ProfilePicture from "../../images/intro_image.svg";
 import CodeIcon from "../../images/code_icon.svg";
 
 const useStyles = makeStyles((theme) => {
   return {
     cardContainer: {
-      marginTop: INTRO_CARD_MARGIN_TOP,
+      marginTop: theme.spacing(9),
       backgroundColor: theme.palette.primary.light,
       padding: theme.spacing(2),
     },
@@ -26,7 +25,7 @@ const useStyles = makeStyles((theme) => {
     codeIcon: {
       marginTop: theme.spacing(1),
       marginBottom: theme.spacing(1),
-      width: CODE_ICON_WIDTH,
+      width: "1.1rem",
     },
     textContainer: {
       paddingTop: theme.spacing(2),
