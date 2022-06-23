@@ -5,7 +5,9 @@ const useStyles = makeStyles((theme) => {
   return {
     container: {
       backgroundColor: theme.palette.primary.main,
-      paddingRight: theme.spacing(5),
+      [theme.breakpoints.up("sm")]: {
+        paddingRight: theme.spacing(5),
+      },
       [theme.breakpoints.up("lg")]: {
         paddingRight: theme.spacing(20),
       },

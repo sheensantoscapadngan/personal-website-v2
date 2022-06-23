@@ -6,8 +6,9 @@ const useStyles = makeStyles((theme) => {
   return {
     container: {
       backgroundColor: theme.palette.primary.main,
+      marginBottom: theme.spacing(3),
       paddingLeft: theme.spacing(6),
-      paddingTop: theme.spacing(5),
+      paddingTop: theme.spacing(3),
     },
     linkIcon: {
       maxWidth: "2rem",
@@ -40,7 +41,7 @@ const OutroLinks = () => {
             window.open(item.link);
           }}
           lg={12}
-          sm={4}
+          xs={4}
         >
           <img src={item.icon} className={classes.linkIcon} />
           <Hidden mdDown>
