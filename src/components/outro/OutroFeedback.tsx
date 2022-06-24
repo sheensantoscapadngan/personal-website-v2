@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button, Grid, Typography, makeStyles } from "@material-ui/core";
+import Swal from "sweetalert2";
+import { publishFeedback } from "../../services/FeedbackService";
 
 const useStyles = makeStyles((theme) => {
   return {
@@ -33,6 +35,24 @@ const useStyles = makeStyles((theme) => {
 
 const OutroFeedback = () => {
   const classes = useStyles();
+  const [feedback, setFeedback] = useState("");
+
+  const handleInputChange = (event: any) => {
+    event.preventDefault();
+
+    setFeedback(event.target.value);
+  };
+  const handleSubmit = async (event: any) => {
+    event.preventDefault();
+
+    publishFeedback(feedback);
+
+    Swal.fire({
+      title: "Thank you for your feedback",
+      text: "I will look into this when I can.",
+    });
+  };
+
   return (
     <Grid container className={classes.container} id="feedback-scrollpoint">
       <Typography variant="h4" color="textPrimary">
@@ -43,9 +63,16 @@ const OutroFeedback = () => {
         sollicitudin. Praesent tincidunt malesuada purus, sit amet pretium nulla
         rhoncus eget. Integer eu urna ac nulla pellentesque molestie. Class
       </Typography>
-      <textarea className={classes.content}></textarea>
+      <textarea
+        className={classes.content}
+        onChange={handleInputChange}
+      ></textarea>
       <Grid container justify="flex-end">
-        <Button color="secondary" className={classes.submit}>
+        <Button
+          color="secondary"
+          className={classes.submit}
+          onClick={handleSubmit}
+        >
           Submit
         </Button>
       </Grid>
