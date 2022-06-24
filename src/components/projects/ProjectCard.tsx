@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => {
     videoDesc: {
       marginTop: theme.spacing(1),
       marginLeft: theme.spacing(1),
-      fontSize: "0.8em",
+      fontSize: "0.85em",
     },
     test: {
       backgroundColor: "blue",

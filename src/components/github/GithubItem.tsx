@@ -8,7 +8,7 @@ import { GithubRepoInterface } from "../../interfaces/GithubInterface";
 const useStyles = makeStyles((theme) => {
   return {
     description: {
-      fontSize: "70%",
+      fontSize: "85%",
     },
     icon: {
       width: "25%",

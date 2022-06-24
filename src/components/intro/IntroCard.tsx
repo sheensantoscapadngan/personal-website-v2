@@ -6,7 +6,7 @@ import CodeIcon from "../../images/code_icon.svg";
 const useStyles = makeStyles((theme) => {
   return {
     cardContainer: {
-      marginTop: theme.spacing(9),
+      marginTop: theme.spacing(6),
       backgroundColor: theme.palette.primary.light,
       padding: theme.spacing(2),
     },

@@ -42,7 +42,7 @@ const theme = responsiveFontSizes(
       },
     },
     typography: {
-      fontFamily: "Roboto",
+      fontFamily: "League Spartan",
       fontWeightLight: 400,
       fontWeightRegular: 500,
       fontWeightMedium: 600,

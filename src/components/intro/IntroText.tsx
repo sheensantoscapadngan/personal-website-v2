@@ -25,7 +25,7 @@ const AppIntroduction = () => {
         <Typography
           color="textPrimary"
           variant="body2"
-          style={{ textAlign: "center" }}
+          style={{ textAlign: "center", fontSize: "1rem" }}
         >
           Full-stack Software Developer & Programming Enthusiast
         </Typography>
