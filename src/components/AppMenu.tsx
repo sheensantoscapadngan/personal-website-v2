@@ -42,7 +42,7 @@ const useStyles = makeStyles((theme) => {
       display: "flex",
       marginRight: theme.spacing(4),
       "&:hover": {
-        opacity: 0.8,
+        color: theme.palette.secondary.main,
       },
       [theme.breakpoints.down("md")]: {
         padding: theme.spacing(2),

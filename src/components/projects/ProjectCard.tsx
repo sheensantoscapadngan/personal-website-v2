@@ -7,7 +7,7 @@ import {
   Typography,
   makeStyles,
 } from "@material-ui/core";
-import Thumbnail from "../../images/youtube_thumbnail.svg";
+import Project from "../../default_values/Project";
 import VisitChannel from "../../images/visit_channel.svg";
 
 const useStyles = makeStyles((theme) => {
@@ -23,7 +23,11 @@ const useStyles = makeStyles((theme) => {
       padding: theme.spacing(2),
     },
     videoTitle: {
+      cursor: "pointer",
       marginTop: theme.spacing(2),
+      "&:hover": {
+        opacity: 0.8,
+      },
     },
     videoInfo: {
       marginTop: theme.spacing(1),
@@ -36,8 +40,9 @@ const useStyles = makeStyles((theme) => {
     test: {
       backgroundColor: "blue",
     },
-    thumbnail: {
-      maxWidth: "100%",
+    video: {
+      width: "100%",
+      height: "200px",
     },
     textContainer: {
       paddingLeft: theme.spacing(2),
@@ -51,30 +56,36 @@ const ProjectCard = () => {
     <>
       <Paper className={classes.projectCardContainer} elevation={2} square>
         <Grid container sm={12}>
-          <Grid container item sm={5}>
-            <img src={Thumbnail} className={classes.thumbnail}></img>
+          <Grid container item justify="center" sm={5}>
+            <iframe
+              className={classes.video}
+              src={Project.embedUrl}
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            ></iframe>
           </Grid>
           <Grid item sm={7} className={classes.textContainer}>
-            <Typography className={classes.videoTitle}>
-              I developed an app for downloading Spotify Playlists for FREE
+            <Typography
+              className={classes.videoTitle}
+              onClick={() => window.open(Project.videoUrl)}
+            >
+              {Project.title}
             </Typography>
             <Typography
               variant="body1"
               color="textSecondary"
               className={classes.videoInfo}
             >
-              StickDoesCS · 31.2k views
+              {Project.author}
             </Typography>
             <Typography variant="body2" className={classes.videoDesc}>
-              If this video gets 100 likes, I'll continue to push updates and
-              make it even better! Oh, and I apologize for the bad UI, its uhhhh
-              well, the best I could do for now :')
+              {Project.description}
             </Typography>
           </Grid>
         </Grid>
         <Grid container className={classes.actionsContainer} justify="center">
           <Grid item>
-            <IconButton>
+            <IconButton onClick={() => window.open(Project.authorUrl)}>
               <img src={VisitChannel} className={classes.actionsIcon} />
             </IconButton>
           </Grid>
