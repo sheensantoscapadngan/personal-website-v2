@@ -1,18 +1,25 @@
 import React from "react";
-import { Container, Grid, Typography } from "@material-ui/core";
+import { Container, Grid, makeStyles, Typography } from "@material-ui/core";
+
+const useStyles = makeStyles((theme) => ({
+  name: {
+    fontWeight: 600,
+    textAlign: "center",
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "2.1rem",
+    },
+  },
+}));
 
 const AppIntroduction = () => {
+  const classes = useStyles();
   return (
     <Container>
       <Grid container justify="center" alignItems="center">
         <Typography color="textSecondary">Hi there! I'm</Typography>
       </Grid>
       <Grid container justify="center" alignItems="center">
-        <Typography
-          color="textPrimary"
-          variant="h2"
-          style={{ fontWeight: 600, textAlign: "center" }}
-        >
+        <Typography className={classes.name} color="textPrimary" variant="h2">
           Sheen Capadngan
         </Typography>
       </Grid>
