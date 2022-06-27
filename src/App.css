@@ -13,15 +13,20 @@ a {
 .swal2-popup {
   background-color: #090c10 !important;
   box-shadow: 2px 10px 10px 2px rgba(10, 10, 10, 1);
-  color: white;
   padding-top: 30px !important;
   padding-bottom: 30px !important;
   width: 400px !important;
 }
 
+.swal2-title {
+  color: white !important;
+  font-family: "League Spartan" !important;
+}
+
 .swal2-confirm {
   background-color: #2baa48 !important;
   color: black !important;
-  width: 120px;
+  font-family: "League Spartan" !important;
   font-weight: 600 !important;
+  width: 120px;
 }

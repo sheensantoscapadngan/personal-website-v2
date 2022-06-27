@@ -49,19 +49,18 @@ const OutroFeedback = () => {
 
     Swal.fire({
       title: "Thank you for your feedback",
-      text: "I will look into this when I can.",
     });
   };
 
   return (
     <Grid container className={classes.container} id="feedback-scrollpoint">
       <Typography variant="h4" color="textPrimary">
-        I appreciate your feedback!
+        Got any feedback for me?
       </Typography>
       <Typography color="textSecondary" className={classes.subtitle}>
-        onsectetur adipiscing elit. Vestibulum semper nisi a quam interdum
-        sollicitudin. Praesent tincidunt malesuada purus, sit amet pretium nulla
-        rhoncus eget. Integer eu urna ac nulla pellentesque molestie. Class
+        Let me know. I would really appreciate it if you would take the time to
+        leave me your inputs on how I can improve. Don't worry, you'll be
+        anonymous so feel free to be as honest as possible!
       </Typography>
       <textarea
         className={classes.content}

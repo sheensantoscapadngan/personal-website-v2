@@ -61,17 +61,17 @@ const IntroCard = () => {
               I am...
             </Typography>
             <img alt="code" src={CodeIcon} className={classes.codeIcon}></img>
-            <Typography>
-              a Full-time Developer, and a Part-time Student from
-            </Typography>
+            <Typography>a Full-time Web Developer from</Typography>
             <Typography variant="body2" color="textSecondary">
-              Cebu, Philippines. I work as a full-stack developer at Symph,
-              geared towards developing complete software solutions for
-              businesses and organizations. Currently, I'm studying as a
-              grade-11 scholar of Philippine Science High School - Central
-              Visayas Campus. I make computer science youtube videos for fun and
-              I work on completely random projects with high hopes of soon
-              becoming a crazy rich asian.
+              Cebu, Philippines. I work as a full-stack developer at{" "}
+              <a href="https://www.symph.co/" target="_blank">
+                Symph
+              </a>
+              , focused on developing complete software solutions for businesses
+              and organizations. I make computer science youtube videos for fun
+              and I work on multiple different personal projects hoping to
+              eventually dominate the tech industry as an aspiring
+              Technopreneur.
             </Typography>
           </Grid>
         </Grid>
