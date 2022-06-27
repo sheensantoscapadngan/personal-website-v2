@@ -64,7 +64,7 @@ const IntroCard = () => {
             <Typography>a Full-time Web Developer from</Typography>
             <Typography variant="body2" color="textSecondary">
               Cebu, Philippines. I work as a full-stack developer at{" "}
-              <a href="https://www.symph.co/" target="_blank">
+              <a href="https://www.symph.co/" rel="noreferrer" target="_blank">
                 Symph
               </a>
               , focused on developing complete software solutions for businesses
