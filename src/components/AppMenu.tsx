@@ -73,7 +73,7 @@ const AppMenu = () => {
   const Links = ({ showLinkIcons }: { showLinkIcons?: boolean }) => (
     <>
       <Hidden smDown>
-        <img src={Logo} className={classes.menuIcon} />
+        <img alt="icon" className={classes.menuIcon} src={Logo} />
       </Hidden>
       <Typography
         align="left"
@@ -177,7 +177,11 @@ const AppMenu = () => {
           </Grid>
           <Hidden xsDown>
             <Grid item sm={2} lg={6} className={classes.menuBubbleContainer}>
-              <img src={MenuBubble} className={classes.menuBubble}></img>
+              <img
+                alt="bubble"
+                src={MenuBubble}
+                className={classes.menuBubble}
+              ></img>
             </Grid>
           </Hidden>
         </Grid>

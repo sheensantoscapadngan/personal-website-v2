@@ -43,7 +43,7 @@ const OutroLinks = () => {
           lg={12}
           xs={4}
         >
-          <img src={item.icon} className={classes.linkIcon} />
+          <img alt="logo" src={item.icon} className={classes.linkIcon} />
           <Hidden mdDown>
             <Typography
               variant="body2"

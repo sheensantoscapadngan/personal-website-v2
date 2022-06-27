@@ -24,7 +24,7 @@ const GithubHeader = () => {
     >
       <Grid container item sm={6} alignItems="center" justify="center">
         <Grid item>
-          <img src={GithubIcon} className={classes.githubIcon} />
+          <img alt="github" src={GithubIcon} className={classes.githubIcon} />
         </Grid>
         <Grid item>
           <Typography variant="h3" color="textPrimary">

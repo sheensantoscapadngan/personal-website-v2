@@ -50,13 +50,17 @@ const IntroCard = () => {
             sm={12}
             className={classes.profileImageContainer}
           >
-            <img src={ProfilePicture} className={classes.profileImage}></img>
+            <img
+              alt="self"
+              src={ProfilePicture}
+              className={classes.profileImage}
+            ></img>
           </Grid>
           <Grid item className={classes.textContainer} md={8} sm={12}>
             <Typography variant="body1" style={{ fontSize: "1.2em" }}>
               I am...
             </Typography>
-            <img src={CodeIcon} className={classes.codeIcon}></img>
+            <img alt="code" src={CodeIcon} className={classes.codeIcon}></img>
             <Typography>
               a Full-time Developer, and a Part-time Student from
             </Typography>

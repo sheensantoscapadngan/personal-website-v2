@@ -2,7 +2,7 @@ import LinkedIn from "../images/linkedin.svg";
 import Facebook from "../images/facebook.svg";
 import Fiverr from "../images/fiverr.svg";
 
-export default [
+const SocialMedia = [
   {
     icon: LinkedIn,
     link: "https://www.linkedin.com/in/sheen-santos-capadngan-582b8b184/",
@@ -16,3 +16,5 @@ export default [
     link: "https://www.fiverr.com/sheensantos",
   },
 ];
+
+export default SocialMedia;

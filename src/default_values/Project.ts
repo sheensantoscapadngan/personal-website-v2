@@ -1,4 +1,4 @@
-export default {
+const Project = {
   author: "StickDoesCS",
   authorUrl: "https://www.youtube.com/channel/UCn4-zUWWsbrO7Kaxi1RsL8w",
   description:
@@ -8,3 +8,5 @@ export default {
   videoUrl:
     "https://www.youtube.com/watch?v=eDKk8-1NOAI&ab_channel=StickDoesCS",
 };
+
+export default Project;

@@ -1,8 +1,6 @@
 import React from "react";
 import { Grid, Typography, makeStyles } from "@material-ui/core";
-import Youtube from "../../images/youtube.svg";
 import Projects from "../../images/projects_icon.svg";
-import { PROJECTS_MARGIN_TOP } from "../../constants/Projects";
 
 const useStyles = makeStyles((theme) => {
   return {
@@ -20,7 +18,7 @@ const ProjectHeader = () => {
     <>
       <Grid container id="projects-scrollpoint">
         <Grid container item xs={12}>
-          <img src={Projects} style={{ height: "70%" }} />
+          <img alt="projects" src={Projects} style={{ height: "70%" }} />
           <Typography
             className={classes.projectsText}
             color="textPrimary"

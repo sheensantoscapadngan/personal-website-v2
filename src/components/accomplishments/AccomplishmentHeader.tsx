@@ -1,6 +1,5 @@
 import React from "react";
 import { Grid, Typography, makeStyles } from "@material-ui/core";
-import { ACCOMPLISHMENT_MARGIN_TOP } from "../../constants/Accomplishment";
 import Accomplishment from "../../images/accomplishment.svg";
 
 const useStyles = makeStyles((theme) => {
@@ -19,7 +18,11 @@ const AccomplishmentHeader = () => {
     <>
       <Grid container id="accomplishments-scrollpoint">
         <Grid container item sm={11}>
-          <img src={Accomplishment} style={{ height: "70%" }} />
+          <img
+            alt="accomplishment icon"
+            src={Accomplishment}
+            style={{ height: "70%" }}
+          />
           <Typography
             className={classes.accomplishmentText}
             color="textPrimary"

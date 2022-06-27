@@ -45,7 +45,7 @@ const GithubItem = (props: Props) => {
       <Grid container justify="flex-end">
         <Grid item>
           <Grid container item>
-            <img src={WatchIcon} className={classes.icon} />
+            <img alt="watch" src={WatchIcon} className={classes.icon} />
             <Typography
               variant="body2"
               color="textSecondary"
@@ -64,7 +64,7 @@ const GithubItem = (props: Props) => {
         </Grid>
         <Grid item>
           <Grid container item>
-            <img src={StarIcon} className={classes.icon} />
+            <img alt="star" src={StarIcon} className={classes.icon} />
             <Typography
               variant="body2"
               color="textSecondary"
@@ -83,7 +83,7 @@ const GithubItem = (props: Props) => {
         </Grid>
         <Grid item>
           <Grid container item>
-            <img src={ForkIcon} className={classes.icon} />
+            <img alt="fork" src={ForkIcon} className={classes.icon} />
             <Typography
               variant="body2"
               color="textSecondary"

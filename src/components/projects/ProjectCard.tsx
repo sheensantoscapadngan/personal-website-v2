@@ -86,7 +86,11 @@ const ProjectCard = () => {
         <Grid container className={classes.actionsContainer} justify="center">
           <Grid item>
             <IconButton onClick={() => window.open(Project.authorUrl)}>
-              <img src={VisitChannel} className={classes.actionsIcon} />
+              <img
+                alt="visit"
+                src={VisitChannel}
+                className={classes.actionsIcon}
+              />
             </IconButton>
           </Grid>
         </Grid>
