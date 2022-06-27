@@ -1,5 +1,5 @@
 import React from "react";
-import Slider from "react-slick";
+import Slider, { LazyLoadTypes } from "react-slick";
 import { Paper, makeStyles } from "@material-ui/core";
 import AccomplishmentItem from "./AccomplishmentItem";
 import AccomplishmentInterface from "../../interfaces/AccomplishmentInterface";
@@ -24,6 +24,7 @@ const AccomplishmentSlideShow = ({ accomplishments }: Props) => {
     arrows: false,
     dots: true,
     infinite: true,
+    lazyLoad: "progressive" as LazyLoadTypes,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
