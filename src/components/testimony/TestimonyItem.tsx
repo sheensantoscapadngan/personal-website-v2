@@ -1,6 +1,5 @@
 import React from "react";
 import { Paper, Typography, makeStyles, Grid } from "@material-ui/core";
-import { PROFILE_IMAGE_SIZE } from "../../constants/Testimony";
 import TestimonyInterface from "../../interfaces/TestimonyInterface";
 
 interface TestimonyItemProps {
@@ -15,8 +14,8 @@ const useStyles = makeStyles((theme) => {
       padding: theme.spacing(4),
     },
     picture: {
-      width: PROFILE_IMAGE_SIZE,
-      height: PROFILE_IMAGE_SIZE,
+      width: 60,
+      height: 60,
       borderRadius: "50%",
     },
     name: {

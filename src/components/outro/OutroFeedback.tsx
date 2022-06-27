@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => {
       width: "100%",
     },
     subtitle: {
-      fontSize: "70%",
+      fontSize: "80%",
     },
     submit: {
       marginTop: theme.spacing(1),

@@ -36,7 +36,7 @@ const TestimonySlideShow = ({ testimonies }: Props) => {
       <Paper
         className={classes.testimonyCardContainer}
         id="testimonies-scrollpoint"
-        elevation={3}
+        elevation={8}
         square
       >
         <Slider {...slideSettings}>
