@@ -18,6 +18,8 @@ const useStyles = makeStyles((theme) => {
       marginTop: theme.spacing(1),
       marginBottom: theme.spacing(2),
       marginLeft: theme.spacing(2),
+      marginRight: theme.spacing(2),
+      textAlign: "justify",
     },
   };
 });
