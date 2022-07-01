@@ -24,7 +24,6 @@ const AccomplishmentSlideShow = ({ accomplishments }: Props) => {
     arrows: false,
     dots: true,
     infinite: true,
-    lazyLoad: "progressive" as LazyLoadTypes,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,

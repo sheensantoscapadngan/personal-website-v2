@@ -34,7 +34,12 @@ const TestimonyItem = ({ data }: TestimonyItemProps) => {
   return (
     <Paper elevation={10} className={classes.itemContainer}>
       <Grid container justify="center" alignItems="center">
-        <img src={profilePicture} className={classes.picture} alt="profile" />
+        <img
+          alt="profile"
+          className={classes.picture}
+          src={profilePicture}
+          loading="lazy"
+        />
       </Grid>
       <Grid container justify="center" alignItems="center">
         <Typography variant="body1" className={classes.name}>

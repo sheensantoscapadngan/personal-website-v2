@@ -32,7 +32,12 @@ const AccomplishmentItem = ({ data }: AccomplishmentItemInterface) => {
       <Grid container justify="center" className={classes.itemContainer}>
         <Grid item sm={1}></Grid>
         <Grid item>
-          <img alt="accomplishment" src={image} style={{ maxHeight: 240 }} />
+          <img
+            alt="accomplishment"
+            loading="lazy"
+            src={image}
+            style={{ maxHeight: 240 }}
+          />
         </Grid>
         <Grid item sm={1}></Grid>
       </Grid>
