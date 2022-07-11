@@ -1,6 +1,6 @@
 import React from "react";
 import { Grid, Paper, Typography, makeStyles } from "@material-ui/core";
-import ProfilePicture from "../../images/intro_image.svg";
+import Avatar from "../../images/avatar.jpeg";
 import CodeIcon from "../../images/code_icon.svg";
 
 const useStyles = makeStyles((theme) => {
@@ -50,11 +50,7 @@ const IntroCard = () => {
             sm={12}
             className={classes.profileImageContainer}
           >
-            <img
-              alt="self"
-              src={ProfilePicture}
-              className={classes.profileImage}
-            ></img>
+            <img alt="self" src={Avatar} className={classes.profileImage}></img>
           </Grid>
           <Grid item className={classes.textContainer} md={8} sm={12}>
             <Typography variant="body1" style={{ fontSize: "1.2em" }}>
