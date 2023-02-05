@@ -13,7 +13,6 @@ import ChatBubbleIcon from "@material-ui/icons/ChatBubble";
 import DeveloperBoardIcon from "@material-ui/icons/DeveloperBoard";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import MenuIcon from "@material-ui/icons/Menu";
-import ThumbUpAltIcon from "@material-ui/icons/ThumbUpAlt";
 import WorkIcon from "@material-ui/icons/Work";
 import Logo from "../images/logo.svg";
 import MenuBubble from "../images/menu_bubble.svg";
@@ -30,12 +29,13 @@ const useStyles = makeStyles((theme) => {
     menuContainer: {
       display: "flex",
       [theme.breakpoints.up("md")]: {
-        justifyContent: "center",
+        justifyContent: "flex-start",
       },
     },
     menuIcon: {
       height: MENU_ICON_HEIGHT,
       marginRight: theme.spacing(4),
+      marginLeft: theme.spacing(5),
     },
     menuItem: {
       cursor: "pointer",
@@ -99,14 +99,6 @@ const AppMenu = () => {
       >
         {showLinkIcons && <GitHubIcon className={classes.linkIcon} />}
         Github
-      </Typography>
-      <Typography
-        className={classes.menuItem}
-        color="textSecondary"
-        onClick={() => scroll("testimonies-scrollpoint")}
-      >
-        {showLinkIcons && <ThumbUpAltIcon className={classes.linkIcon} />}
-        Testimonies
       </Typography>
       <Typography
         className={classes.menuItem}

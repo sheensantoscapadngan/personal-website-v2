@@ -81,9 +81,6 @@ const App = () => {
           <Grid item sm={4}></Grid>
           <Github />
         </Grid>
-        <Grid container className={classes.testimonyContainer}>
-          <Testimonies />
-        </Grid>
         <Outro />
       </div>
     </MuiThemeProvider>
