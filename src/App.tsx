@@ -19,7 +19,6 @@ import Intro from "./components/intro/Intro";
 import Projects from "./components/projects/Projects";
 import Accomplishments from "./components/accomplishments/Accomplishments";
 import Github from "./components/github/Github";
-import Testimonies from "./components/testimony/Testimonies";
 import Outro from "./components/outro/Outro";
 
 import "slick-carousel/slick/slick.css";
