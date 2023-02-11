@@ -9,6 +9,9 @@ const useStyles = makeStyles((theme) => {
       marginBottom: theme.spacing(3),
       paddingLeft: theme.spacing(6),
       paddingTop: theme.spacing(3),
+      [theme.breakpoints.down("sm")]: {
+        marginTop: theme.spacing(4),
+      },
     },
     linkIcon: {
       maxWidth: "2rem",

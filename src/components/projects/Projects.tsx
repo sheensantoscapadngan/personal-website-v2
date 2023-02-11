@@ -7,6 +7,7 @@ const useStyles = makeStyles((theme) => {
   return {
     container: {
       marginTop: theme.spacing(6),
+      width: "100%",
       [theme.breakpoints.down("xs")]: {
         marginLeft: theme.spacing(2),
         marginRight: theme.spacing(2),

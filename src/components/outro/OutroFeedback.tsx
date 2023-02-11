@@ -29,6 +29,9 @@ const useStyles = makeStyles((theme) => {
     },
     submit: {
       marginTop: theme.spacing(1),
+      [theme.breakpoints.down("sm")]: {
+        marginBottom: theme.spacing(4),
+      },
     },
   };
 });
